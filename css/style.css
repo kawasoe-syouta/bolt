@@ -4,82 +4,132 @@
 body {
   font-family: "Lato";
 }
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.font-raleway {
+  font-family: "Raleway";
+}
+
+.text-center,
+.skill__contents li p {
+  text-align: center;
+}
+
+.dis-inline-block,
+.nav__icons li a,
+.our__contents li,
+.our__contents li a {
+  display: inline-block;
+}
+
+.theme-background-color {
+  background-color: #74cfae;
+}
+
+.theme-color {
+  color: #74cfae;
+}
+
+.color-fff,
+.skill__contents li p {
+  color: #fff;
+}
+
+.background-color-fff {
+  background-color: #fff;
+}
+
+.background-color-f2 {
+  background-color: #f2f2f2;
+}
+
+.color-4e {
+  color: #4e4e4e;
+}
+
+.background-color-4e {
+  background-color: #4e4e4e;
+}
+
+.color-c0 {
+  color: #c0c0c0;
+}
+
 .clearfix::after {
   display: block;
   clear: both;
   content: "";
 }
+
 .inner {
   width: 1100px;
   margin: 0 auto;
 }
+
 .header {
   width: 100%;
-  background-color: #ffffff;
   position: fixed;
   top: 0px;
   z-index: 10;
 }
+
 .header-inner {
   padding: 15px 0;
-  display: flex;
   justify-content: space-between;
 }
+
 .fa-bolt {
   font-size: 40px;
-  color: #4e4e4e;
 }
-.contact {
+
+.header-inner a {
   padding: 14px 12px;
-  text-decoration: none;
-  background-color: #74cfae;
-  display: inline-block;
 }
-.contact:hover .contact__text {
+
+.header-inner a:hover .contact__text {
   color: #333;
 }
+
 .contact__text {
   font-size: 12px;
-  color: #ffffff;
   transition: 0.3s;
 }
+
 .title {
   margin-top: 70px;
-  background-color: #f2f2f2;
 }
+
 .title-inner {
   padding: 250px 0;
-  text-align: center;
 }
+
 .title__main {
   font-size: 90px;
   font-weight: 700;
-  font-family: ;
-  color: #74cfae;
 }
+
 .title__sub {
   margin-top: 20px;
   font-size: 30px;
-  font-family: "Raleway";
-  color: #c0c0c0;
 }
-.what {
-  background-color: #74cfae;
-}
+
 .what-inner {
-  display: flex;
   justify-content: space-around;
   padding-top: 50px;
   font-size: 0;
 }
 .what__title__text {
   margin-top: 40px;
-  text-align: center;
-  color: #ffffff;
 }
 .what__title {
   font-size: 24px;
-  font-family: "Raleway";
 }
 .what__text {
   width: 650px;
@@ -88,127 +138,113 @@ body {
   margin-top: 35px;
   line-height: 150%;
 }
-.our {
-  background-color: #f2f2f2;
-}
+
 .our-inner {
   font-size: 0;
   padding: 60px 0 70px;
 }
+
 .our__title {
-  text-align: center;
   font-size: 24px;
-  font-family: "Raleway";
-  color: #4e4e4e;
 }
+
 .our-inner ul {
   margin-top: 40px;
 }
-.our__content {
-  display: inline-block;
-}
+
 .our__contents li {
-  display: inline-block;
-  margin-left: 100px;
+  margin: 80px 0 0 100px;
   opacity: 0.7;
   transition: 0.3s;
 }
+
 .our__contents li:hover {
   opacity: 1;
 }
+
 .our__contents li:nth-child(3n+1) {
   margin-left: 0;
 }
-.our__contents li:nth-child(n+4):nth-child(-n+6) {
-  margin-top: 80px;
+
+.our__contents li:nth-child(-n+3) {
+  margin-top: 0;
 }
+
 .our__message {
-  font-size: 1rem;
+  font-size: 16px;
   margin-top: 90px;
-  text-align: center;
 }
+
 .our__text {
   width: 460px;
-  display: inline-block;
   vertical-align: middle;
-  color: #4e4e4e;
 }
+
 .our__email {
   margin-left: 90px;
-  display: inline-block;
   padding: 14px 20px;
-  text-decoration: none;
-  background-color: #74cfae;
 }
+
 .our__email__text {
-  color: #ffffff;
   transition: 0.3s;
 }
+
 .our__email:hover .our__email__text {
   color: #333;
 }
-.skill {
-  background-color: #4e4e4e;
-}
+
 .skill-inner {
   padding: 70px 0 100px;
 }
+
 .skill__title {
-  text-align: center;
-  color: #ffffff;
-  font-family: "Raleway";
   font-size: 25px;
 }
+
 .skill__contents {
   margin-top: 50px;
-  display: flex;
   justify-content: center;
 }
-.skill__content {
+
+.skill__contents li {
   margin-left: 180px;
 }
-.skill__content:first-child {
+
+.skill__contents li:first-child {
   margin-left: 0;
 }
-.skill__name {
+
+.skill__contents li p {
   margin-top: 25px;
-  color: #ffffff;
-  text-align: center;
   font-size: 16px;
 }
-.nav {
-  background-color: #f2f2f2;
-}
+
 .nav-inner {
   padding: 200px 0;
 }
+
 .nav__icons {
-  display: flex;
   justify-content: center;
 }
-.nav__icon {
+
+.nav__icons li a {
   padding: 35px 0;
-  display: inline-block;
   transition: 0.3s;
 }
-.nav__icon:hover {
-  background-color: #ffffff;
+
+.nav__icons li a:hover {
+  background-color: #fff;
 }
+
 .sns {
   width: 185px;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
   font-size: 40px;
-  color: #74cfae;
 }
-.footer {
-  background-color: #74cfae;
-}
+
 .footer-inner {
   padding: 20px 0 25px;
 }
+
 .footer__text {
   float: right;
-  color: #ffffff;
 }
