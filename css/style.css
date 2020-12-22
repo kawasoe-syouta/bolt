@@ -280,10 +280,6 @@ a {
     font-size: 80px;
   }
 
-  .our__contents li:nth-child(4) {
-    margin-top: 80px;
-  }
-
   .our__email {
     margin-top: 40px;
   }
@@ -343,8 +339,12 @@ a {
     align-items: center;
   }
   
-  .our__contents li:nth-child(4) {
+  .our__contents li:nth-child(3n+1) {
     margin-top: 80px;
+  }
+
+  .our__contents li:first-child {
+    margin-top: 0;
   }
   
   .our__message {
